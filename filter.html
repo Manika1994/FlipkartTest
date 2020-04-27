@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="filter.css">
+        <link rel="images" href="./images/">
+
+        <title>Flipkart Application</title>
+    </head>
+     <body class="container">
+       <div id="filterBoxId">
+           <h4><strong>Filter</strong></h4>
+           <hr>
+       </div>
+           <div>
+           <label for="Price">Price</label>
+           <div>
+<select id="minPriceId">
+  <option value="min">Min</option>
+  <option value="twothousand">2000</option>
+  <option value="fourthousand">4000</option>
+  <option value="seventhousand">7000</option>
+  <option value="tenthousand">10000</option>
+</select>
+<span> to
+
+</span>
+<select id="MxPriceId">
+    <option value="volvo">Max</option>
+    <option value="saab">2000</option>
+    <option value="opel">4000</option>
+    <option value="audi">7000</option>
+    <option value="volvo">10000+</option>
+  </select>
+</div>
+</div>
+<hr>
+<div>
+    <h5><strong>Brand</strong></h5>
+<div class="dropdown">
+  <span onclick="myBrandFunction()" class="dropbtn">Search For Brand</span>
+  <div id="myBrandDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInputBrand" onkeyup="filterBrandFunction()">
+    <a><input type="checkbox" href="#Puma">Puma</input></a>
+    <a><input type="checkbox" href="#Sparx">Sparx</input></a>
+    <a><input type="checkbox" href="#Blog">Blog</input></a>
+    <a><input type="checkbox" href="#Adidas">Adidas</input></a>
+    <a><input type="checkbox" href="#Nike">Nike</input></a>
+  </div>
+</div>
+    <hr>
+    <div>
+        <h5><strong>Color</strong></h5>
+    <div class="dropdown">
+      <span onclick="myColorFunction()" class="dropbtn">Search For Color</span>
+      <div id="myDropdownColor" class="dropdown-content dropdown-content-brand">
+        <input type="text" placeholder="Search.." id="myInputColor" onkeyup="filterColorFunction()">
+        <a><input type="checkbox" href="#Red"><span class="redDot"></span>Red</input></a>
+        <a><input type="checkbox" href="#Black"><span class="blackDot"></span>Black</input></a>
+        <a><input type="checkbox"  href="#Blue"><span class="blueDot"></span>Blue</input></a>
+        <a><input type="checkbox"  href="#Orange"><span class="orangeDot"></span>Orange</input></a>
+        <a><input type="checkbox" href="#Brown"><span class="brownDot"></span>Brown</input></a>
+        <a><input type="checkbox" href="#Black"><span class="yellowDot"></span>yellow</input></a>
+        <a><input type="checkbox"  href="#Blue"><span class="greenDot"></span>green</input></a>
+      </div>
+    </div>
+
+       </div>
+    <script src="userData.js"></script>
+    <script src="filterComponent.js"></script>
+    </body>
+</html> 
